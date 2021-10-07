@@ -88,5 +88,8 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND de.to_date = '9999-01-01'
 ORDER BY de.emp_no, de.to_date DESC, t.to_date DESC;
 
+Select Count(emp_no), title
+FROM mentor_eligibility 
+GROUP BY title
 
 
